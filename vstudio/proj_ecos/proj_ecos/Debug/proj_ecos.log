@@ -1,0 +1,60 @@
+﻿生成启动时间为 2019/9/10 14:19:48。
+     1>项目“G:\zho\dma_\VC\ecos-Gloden\vstudio\proj_ecos\proj_ecos\proj_ecos.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\proj_ecos.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\external\ldl\src\ldl.c ..\..\..\src\cone.c ..\..\..\src\ecos.c ..\..\..\src\equil.c ..\..\..\src\expcone.c ..\..\..\src\kkt.c ..\..\..\src\preproc.c ..\..\..\src\runecos.c
+         runecos.c
+     1>g:\zho\dma_\vc\ecos-gloden\src\runecos.c(33): warning C4101: “file_dout”: 未引用的局部变量
+         preproc.c
+         kkt.c
+         expcone.c
+         equil.c
+         ecos.c
+     1>g:\zho\dma_\vc\ecos-gloden\src\ecos.c(907): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\zho\dma_\vc\ecos-gloden\src\ecos.c(1288): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>g:\zho\dma_\vc\ecos-gloden\src\ecos.c(1302): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+         cone.c
+         ldl.c
+         正在生成代码...
+       Link:
+         D:\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\zho\dma_\VC\ecos-Gloden\vstudio\proj_ecos\Debug\proj_ecos.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\proj_ecos.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\zho\dma_\VC\ecos-Gloden\vstudio\proj_ecos\Debug\proj_ecos.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\zho\dma_\VC\ecos-Gloden\vstudio\proj_ecos\Debug\proj_ecos.lib" /MACHINE:X86 Debug\amd_1.obj
+         Debug\amd_2.obj
+         Debug\amd_aat.obj
+         Debug\amd_control.obj
+         Debug\amd_defaults.obj
+         Debug\amd_dump.obj
+         Debug\amd_global.obj
+         Debug\amd_info.obj
+         Debug\amd_order.obj
+         Debug\amd_postorder.obj
+         Debug\amd_post_tree.obj
+         Debug\amd_preprocess.obj
+         Debug\amd_valid.obj
+         Debug\ldl.obj
+         Debug\cone.obj
+         Debug\ctrlc.obj
+         Debug\ecos.obj
+         Debug\equil.obj
+         Debug\expcone.obj
+         Debug\kkt.obj
+         Debug\preproc.obj
+         Debug\runecos.obj
+         Debug\spla.obj
+         Debug\splamm.obj
+         Debug\timer.obj
+         Debug\wright_omega.obj
+         LINK : 没有找到 G:\zho\dma_\VC\ecos-Gloden\vstudio\proj_ecos\Debug\proj_ecos.exe 或上一个增量链接没有生成它；正在执行完全链接
+         proj_ecos.vcxproj -> G:\zho\dma_\VC\ecos-Gloden\vstudio\proj_ecos\Debug\proj_ecos.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"G:\zho\dma_\VC\ecos-Gloden\vstudio\proj_ecos\Debug\proj_ecos.exe;#1" /manifest Debug\proj_ecos.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\proj_ecos.unsuccessfulbuild”。
+         正在对“Debug\proj_ecos.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“G:\zho\dma_\VC\ecos-Gloden\vstudio\proj_ecos\proj_ecos\proj_ecos.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.30

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CE54E8C4-B034-459D-BE30-A584A58E3059}</ProjectGuid>
+    <RootNamespace>proj_ecos</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>G:\zho\dma_\VC\ecos-Gloden\external\SuiteSparse_config;G:\zho\dma_\VC\ecos-Gloden\external\ldl\include;G:\zho\dma_\VC\ecos-Gloden\external\amd\include;G:\zho\dma_\VC\ecos-Gloden\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\external\amd\include\amd.h" />
+    <ClInclude Include="..\..\..\external\amd\include\amd_internal.h" />
+    <ClInclude Include="..\..\..\external\ldl\include\ldl.h" />
+    <ClInclude Include="..\..\..\external\SuiteSparse_config\SuiteSparse_config.h" />
+    <ClInclude Include="..\..\..\include\cone.h" />
+    <ClInclude Include="..\..\..\include\ctrlc.h" />
+    <ClInclude Include="..\..\..\include\data.h" />
+    <ClInclude Include="..\..\..\include\ecos.h" />
+    <ClInclude Include="..\..\..\include\ecos_bb.h" />
+    <ClInclude Include="..\..\..\include\equil.h" />
+    <ClInclude Include="..\..\..\include\expcone.h" />
+    <ClInclude Include="..\..\..\include\glblopts.h" />
+    <ClInclude Include="..\..\..\include\kkt.h" />
+    <ClInclude Include="..\..\..\include\spla.h" />
+    <ClInclude Include="..\..\..\include\splamm.h" />
+    <ClInclude Include="..\..\..\include\timer.h" />
+    <ClInclude Include="..\..\..\include\wright_omega.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\external\amd\src\amd_1.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_2.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_aat.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_control.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_defaults.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_dump.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_global.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_info.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_order.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_postorder.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_post_tree.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_preprocess.c" />
+    <ClCompile Include="..\..\..\external\amd\src\amd_valid.c" />
+    <ClCompile Include="..\..\..\external\ldl\src\ldl.c" />
+    <ClCompile Include="..\..\..\src\cone.c" />
+    <ClCompile Include="..\..\..\src\ctrlc.c" />
+    <ClCompile Include="..\..\..\src\ecos.c" />
+    <ClCompile Include="..\..\..\src\equil.c" />
+    <ClCompile Include="..\..\..\src\expcone.c" />
+    <ClCompile Include="..\..\..\src\kkt.c" />
+    <ClCompile Include="..\..\..\src\preproc.c" />
+    <ClCompile Include="..\..\..\src\runecos.c" />
+    <ClCompile Include="..\..\..\src\spla.c" />
+    <ClCompile Include="..\..\..\src\splamm.c" />
+    <ClCompile Include="..\..\..\src\timer.c" />
+    <ClCompile Include="..\..\..\src\wright_omega.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
